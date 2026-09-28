@@ -1,0 +1,6 @@
+{
+  "eval_id": 1,
+  "eval_name": "multiple-variations",
+  "prompt": "Generate three variations of a synth bass sound: one aggressive and distorted, one smooth and warm, one with phaser effect. All should be suitable for electronic music around 128 BPM.",
+  "assertions": []
+}

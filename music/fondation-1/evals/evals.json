@@ -1,0 +1,46 @@
+{
+  "skill_name": "fondation-1",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "I want a warm, dreamy piano loop with lots of reverb in a minor key. Something perfect for a chill lo-fi beat.",
+      "expected_output": "Prompt should contain: Keys/Grand Piano, Warm, Airy/Silky, High Reverb, Chord Progression or Melody, 8 Bars, a minor key, 100-115 BPM range",
+      "files": [],
+      "assertions": [
+        {"text": "Contains a piano instrument (Keys or Grand Piano)", "passed": true},
+        {"text": "Contains at least 2 timbre tags (Warm, Airy, Silky, etc.)", "passed": true},
+        {"text": "Contains reverb tag (Medium Reverb or High Reverb)", "passed": true},
+        {"text": "Contains musical movement (Chord Progression, Melody, or Legato)", "passed": true},
+        {"text": "Contains BPM value between 90-120", "passed": true},
+        {"text": "Contains a minor key (C minor, D# minor, Eb minor, etc.)", "passed": true}
+      ]
+    },
+    {
+      "id": 1,
+      "prompt": "Generate three variations of a synth bass sound: one aggressive and distorted, one smooth and warm, one with phaser effect. All should be suitable for electronic music around 128 BPM.",
+      "expected_output": "Three distinct prompts, each with Synth/Bass, appropriate timbre tags, FX, 8 Bars, 128 BPM, and a minor key",
+      "files": [],
+      "assertions": [
+        {"text": "Contains exactly 3 separate prompts", "passed": true},
+        {"text": "Each prompt contains Bass or Synth", "passed": true},
+        {"text": "Contains Distortion or Overdrive tag (aggressive variation)", "passed": true},
+        {"text": "Contains Warm or Smooth tag (warm variation)", "passed": true},
+        {"text": "Contains Phaser tag (phaser variation)", "passed": true},
+        {"text": "Each prompt contains 128 BPM", "passed": true}
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "I need a guitar loop for my electronic track. Something moody and atmospheric, maybe with some delay and reverb. The tempo is around 120 BPM.",
+      "expected_output": "Prompt should contain: Guitar, atmospheric/dark moody descriptors, delay tag, reverb tag, ~120 BPM, suitable bar count",
+      "files": [],
+      "assertions": [
+        {"text": "Contains Guitar (Acoustic, Electric, or similar)", "passed": true},
+        {"text": "Contains mood descriptor (Dark, Moody, Atmospheric, or similar)", "passed": true},
+        {"text": "Contains a delay tag (Medium Delay, Low Delay, or High Delay)", "passed": true},
+        {"text": "Contains a reverb tag", "passed": true},
+        {"text": "Contains BPM near 120 (115-125 range)", "passed": true}
+      ]
+    }
+  ]
+}
