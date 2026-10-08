@@ -35,7 +35,7 @@ Write for engineers who may not know this codebase. Define project-specific abbr
 
 After the first draft is written, load and follow the available `humanizer` skill. Review the whole article, not just its opening. Rewrite prose that sounds staged, repetitive, inflated, or formulaic while preserving every supported fact.
 
-Follow the humanizer's file-mode rules: change prose only. Keep code blocks, inline code, commands, paths, YAML metadata, data, and link targets unchanged. In particular, do not “improve” a command or metadata value during the prose pass. Re-read the finished post and check that the humanizer pass did not alter evidence or technical meaning.
+Follow the humanizer's file-mode rules: change prose only. Keep code blocks, inline code, commands, paths, data, and link targets unchanged. In particular, do not “improve” a command or metadata value during the prose pass. Re-read the finished post and check that the humanizer pass did not alter evidence or technical meaning. At the end you can review the YAML metadata, but only the title and the summary/excerpt/TLDR properties.
 
 ## Final checks
 
