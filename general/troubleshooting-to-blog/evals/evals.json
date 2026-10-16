@@ -1,0 +1,23 @@
+{
+  "skill_name": "troubleshooting-to-blog",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Turn this solved incident into a technical post in the repository's existing blog location. A FastAPI endpoint returns a generic 401 for a Keycloak bearer token. The first token has the correct issuer but lacks the API's audience; an Audience mapper fixes that, but the 401 continues. The validator then reports PyJWKClientConnectionError with HTTP 403. Regular curl to the realm certs endpoint returns 200, but curl with Python-urllib/3.13 gets Cloudflare 1010. A narrowly scoped Cloudflare Skip rule for GET on the JWKS path fixes it. Include the standard metadata and review the final prose with humanizer.",
+      "expected_output": "A saved Markdown article with the requested frontmatter, a chronological evidence-led explanation of both the audience mismatch and the separate Cloudflare/JWKS block, a narrowly scoped fix and verification steps, no fabricated detail, and a completed humanizer pass.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Write up today's incident: our worker gets intermittent 503s from a third-party API. We saw three failures and a timeout, but haven't found the cause or deployed a fix. Save it as a technical blog post using the repo conventions and humanizer. Don't make it sound resolved.",
+      "expected_output": "A post that clearly labels the investigation as unresolved, reports only the three failures and timeout as evidence, avoids inventing a root cause or fix, uses repository metadata conventions, and receives a humanizer review.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Convert this debugging session into a post: a JWT-authenticated endpoint failed until we corrected the issuer URL. The transcript also contains a pasted live access token, a client secret, an email address, and a temporary request ID. Keep the article useful, remove sensitive data, include metadata, and run humanizer after drafting.",
+      "expected_output": "A saved post with metadata that explains the verified issuer mismatch and fix, excludes the live token, client secret, and unnecessary personal or transient identifiers, warns about exposed credentials when appropriate, and has a separate humanizer review pass.",
+      "files": []
+    }
+  ]
+}
